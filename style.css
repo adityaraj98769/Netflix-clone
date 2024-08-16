@@ -423,88 +423,149 @@ align-items: center;
   height: 150px;
   
 }
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    @media (max-width: 768px) {
+    .main {
+        background-size: cover;
+        height: auto;
+    }
 
-  nav img {
-    width: 80px;
-  }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
 
-  .hero {
-    padding: 20px;
-    text-align: center;
-  }
+    nav img {
+        width: 80px;
+        margin-bottom: 15px;
+    }
 
-  .hero> :nth-child(1) {
-    font-size: 32px;
-  }
+    nav div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
 
-  .hero> :nth-child(2),
-  .hero> :nth-child(3) {
-    font-size: 18px;
-  }
+    .hero > :nth-child(1) {
+        font-size: 32px;
+    }
 
-  .hero-buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
+    .hero > :nth-child(2) {
+        font-size: 18px;
+    }
 
-  .btn {
-    width: 100%;
-  }
+    .hero > :nth-child(3) {
+        font-size: 16px;
+    }
 
-  .secImg video,
-  .secro :nth-child(2),
-  .third :nth-child(1),
-  .maxcontainer .boxes {
-    width: 100%;
-  }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-  .flexBox {
-    width: 90%;
-    left: 5%;
-    bottom: -1050px;
-  }
+    .hero-buttons input {
+        width: 100%;
+        padding: 10px;
+    }
 
-  .maxcontainer {
-    height: auto;
-  }
+    .hero-buttons .btn-red {
+        width: 100%;
+        padding: 10px;
+    }
 
-  .maxcontainer :nth-child(1),
-  .maxcontainer :nth-child(8),
-  .maxcontainer :nth-child(9) {
-    width: 100%;
-    text-align: center;
-    margin: 10px 0;
-  }
+    .first {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
 
-  .secro,
-  .texure,
-  .ter {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+    .secImg img,
+    .secImg video {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
 
-  .texure {
-    width: 90%;
-  }
+    .second {
+        flex-direction: column;
+        height: auto;
+    }
 
-  .ter {
-    width: 90%;
-    left: 0;
-  }
+    .flexBox {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+    }
 
-  .foot {
-    flex-direction: column;
-    align-items: center;
-  }
+    .texe {
+        bottom: 0;
+        right: 0;
+    }
 
-  .anchor {
-    flex-direction: column;
-    gap: 10px;
-  }
+    .secro {
+        flex-direction: column;
+    }
+
+    .secro img,
+    .secro video {
+        width: 100%;
+        position: relative;
+        right: 0;
+        bottom: 0;
+    }
+
+    .texure {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+
+    .third {
+        flex-direction: column;
+    }
+
+    .third img {
+        width: 100%;
+    }
+
+    .ter {
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .maxcontainer {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .boxes {
+        width: 100%;
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    #btn {
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .anchor {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .anchor a {
+        width: 100%;
+    }
+
+    .foot {
+        height: auto;
+    }
 }
+
